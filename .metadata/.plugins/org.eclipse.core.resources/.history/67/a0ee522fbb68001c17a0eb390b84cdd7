@@ -1,0 +1,38 @@
+package ProgramSimple;
+
+import java.util.Scanner;
+
+public class Armstrong {
+
+	public static void main(String[] args) {
+		int n,t1,t2,leg=0,rem;
+		Scanner cn=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		n=cn.nextInt();
+		t1=n;
+		while(t1!=0){
+			t1=t1/10;
+			leg = leg+1;
+		}
+		t2=n;
+		int arm=0;
+		while(t2!=0){
+			int mult=1;
+			rem=t2%10;
+		for(int i=1;i<=leg;i++){
+			mult = mult*rem;
+		}
+		arm=arm+mult;
+		t2=t2/10;
+		
+		}
+		if(n==arm){
+			System.out.println(n+"Number is Armstrong");
+			
+		}
+		else{
+			System.out.println("Number is Not Armstrong");
+		}
+	}
+
+}
