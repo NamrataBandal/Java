@@ -1,0 +1,40 @@
+package studentInfo;
+
+import java.util.Scanner;
+
+public class Student {
+	private int rollno;
+	private String name;
+	private int contact;
+	private String email;
+	Scanner cn=new Scanner(System.in);
+	public int getRollno() {
+		return rollno;
+	}
+	public void setRollno(int rollno) {
+		this.rollno = rollno;
+	}
+	public String getName() {
+		
+		System.out.println("Enter the Name Of Student : ");
+		name=cn.next();
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getContact() {
+		return contact;
+	}
+	public void setContact(int contact) {
+		this.contact = contact;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+
+}

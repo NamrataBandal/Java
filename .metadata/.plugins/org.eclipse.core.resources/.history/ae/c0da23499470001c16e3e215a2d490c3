@@ -1,0 +1,19 @@
+package ProgramSimple;
+
+import java.util.HashSet;
+
+public class NumberString {
+
+	public static void main(String[] args) {
+		Alphabet1 obj=new Alphabet1();
+		obj.uniqueVowel("aeibac");
+	}
+
+}
+class Alphabet1{
+	void uniqueVowel(String str){
+		StringBuffer sb1= new StringBuffer();
+		str.chars().distinct().forEach(c ->sb1.append((char)c));
+		System.out.println(sb1);
+	}
+}

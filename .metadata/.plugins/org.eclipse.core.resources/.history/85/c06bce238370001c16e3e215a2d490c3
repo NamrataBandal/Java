@@ -1,0 +1,21 @@
+package ProgramSimple;
+
+public class doselectTest {
+
+	public static void main(String[] args) {
+		Alphabet obj=new Alphabet();
+		obj.uniqueVowel("namrata");
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class Alphabet{
+	String str;
+	int a=0;
+	int len = str.length();
+	void uniqueVowel(String str){
+		System.out.println("this mu string:"+str);
+		
+	}
+}

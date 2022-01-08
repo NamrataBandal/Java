@@ -1,0 +1,33 @@
+package ProgramSimple;
+
+import java.util.HashSet;
+
+public class NumberString {
+
+	public static void main(String[] args) {
+		Alphabet1 obj=new Alphabet1();
+		obj.uniqueVowel("aeibac");
+	}
+
+}
+class Alphabet1{
+	int a=0;
+	void uniqueVowel(String str){
+		StringBuffer sb1= new StringBuffer();
+		str.chars().distinct().forEach(c ->sb1.append((char)c));
+		System.out.println(sb1);
+		int len = sb1.length();
+		
+		for(int i=len-1;i>=0;i--){
+			
+			if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='o'||str.charAt(i)=='i'||str.charAt(i)=='u')
+			{
+				a=a+1;
+				
+			}
+			
+		}
+		System.out.println(a);
+		
+	}
+}

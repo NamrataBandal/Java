@@ -1,0 +1,12 @@
+package studentInfo;
+
+public class CourseInfo extends Student {
+	String course;
+	int cm,ds,dts,jl,cl,maths;
+    void nameCourse(String course) {
+		System.out.println("Course Name is : "+course);
+	}
+	
+	
+
+}

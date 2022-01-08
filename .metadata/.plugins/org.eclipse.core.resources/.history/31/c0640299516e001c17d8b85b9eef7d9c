@@ -1,0 +1,9 @@
+package studentInfo;
+
+public class Student {
+	private int rollno;
+	private String name;
+	private int contact;
+	private Stri;
+
+}
