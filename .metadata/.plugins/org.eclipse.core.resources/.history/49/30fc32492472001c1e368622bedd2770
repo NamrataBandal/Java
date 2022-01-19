@@ -1,0 +1,24 @@
+package DemoProject;
+
+import java.util.Scanner;
+
+public class BaseClassStudent {
+	int rollno;
+	String name;
+    int contact;
+	String email;
+	Scanner cn=new Scanner(System.in);
+	void infoStudent(){
+		System.out.println("Enter the Roll Number Of Student : ");
+		rollno=cn.nextInt();
+		System.out.println("Enter the Name Of Student : ");
+		name=cn.next();
+		System.out.println("Enter the Contact Number Of Student : ");
+		contact=cn.nextInt();
+		System.out.println("Enter the Email ID of Student : ");
+		email=cn.next();
+		
+	}
+	
+
+}

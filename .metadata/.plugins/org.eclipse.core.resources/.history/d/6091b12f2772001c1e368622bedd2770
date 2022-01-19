@@ -1,0 +1,20 @@
+package DemoProject;
+
+
+
+public class Continue extends StudentResult {
+	void otherStudent(){
+		System.out.println("Do you want to add another Student?y/n");
+		boolean un = true;
+		char ch1=cn.next().charAt(0);
+		if((ch1!='y')&&(ch1!='Y')){
+			un=false;
+		}                           
+		else
+		{
+		  infoStudent();
+		  nameCourse(String course);
+		}
+	}
+
+}

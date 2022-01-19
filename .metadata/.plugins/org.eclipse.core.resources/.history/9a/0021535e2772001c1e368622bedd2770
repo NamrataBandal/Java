@@ -1,0 +1,16 @@
+package DemoProject;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		StudentResult sr= new StudentResult();
+		sr.infoStudent();
+		sr.nameCourse("MCA");
+		sr.subject();
+		sr.subTotal();
+		sr.percentage();
+		sr.otherStudent();
+
+	}
+
+}

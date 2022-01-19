@@ -1,0 +1,25 @@
+package studentInfo;
+
+import java.lang.invoke.SwitchPoint;
+
+public class Result extends Student {
+    void otherStudent(){
+		System.out.println("Do you want to add another Student?y/n");
+		boolean un = true;
+		Student s = new Student() ;
+		char ch1=cn.next().charAt(0);
+		if((ch1!='y')&&(ch1!='Y')){
+			un=false;
+		}
+		else
+		{
+		  getRollno();
+		  getName();
+		  getContact();
+		  getEmail();
+		  nameCourse("MCA");
+		  subject();
+		}
+	}
+
+}
