@@ -19,7 +19,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig extends WebMvcConfigurationSupport {
 	 @Bean
-	    public Docket productApi() {
+	    public Docket studentApi() {
 	        return new Docket(DocumentationType.SWAGGER_2)
 	                .select()
 	                .apis(RequestHandlerSelectors.basePackage("com.student.controller"))
@@ -41,8 +41,8 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 	    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
 	        registry.addResourceHandler("swagger-ui.html")
 	                .addResourceLocations("classpath:/META-INF/resources/");
-	        registry.addResourceHandler("/webjars/**")
-	                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+	        registry.addResourceHandler("/student/**")
+	                .addResourceLocations("classpath:/META-INF/resources/student/");
 	    }
 	}
 
