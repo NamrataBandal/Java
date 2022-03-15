@@ -14,6 +14,6 @@
 <fullyQualifiedTypeName name="studentInfo.Result.Inner"/>
 <fullyQualifiedTypeName name="studentInfo.Result"/>
 <fullyQualifiedTypeName name="studentInfo.Student"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
