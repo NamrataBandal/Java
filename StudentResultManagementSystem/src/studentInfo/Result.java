@@ -9,13 +9,13 @@ public class Result extends CourseInfo {
 	void subTotal(){
 		total=cm+ds+dts+jl+cl+maths;
 		System.out.println();
-		System.out.println("Total ="+total+"/600");
+		System.out.println("  Total ="+total+"/600");
 		System.out.println();
 	}
 	void percentage(){
 		
 		per=((total*100)/600);
-		System.out.println("Percentage = "+per+" %");
+		System.out.println("  Percentage = "+per+" %");
 		pr=per;
 		if(cm>=35&&ds>=35&&dts>=35&&jl>=35&&cl>=35&&maths>=35)
 		{
@@ -79,6 +79,10 @@ public class Result extends CourseInfo {
 				}
 			
 		}
+		
+	}
+	public void line() {
+		System.out.println("|-----------------------------------------------------------------|");
 		
 	}
 	
